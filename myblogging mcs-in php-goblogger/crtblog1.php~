@@ -1,0 +1,61 @@
+<?php session_start();
+if(isset($_SESSION['unames']))
+
+$_SESSION['unames']=$_SESSION['unames'];
+
+$title=$_POST["title"];
+$title=mysql_real_escape_string($title);
+$body=$_POST["body"];
+$body=strip_tags($body);
+$body=mysql_real_escape_string($body);
+$host="localhost";
+$username="root";
+$password="abc123";
+$db="mera_dusra_db";
+$con=mysql_connect("localhost","root","abc123");
+
+{
+if (!$con)
+die('Could not connect:'.mysql_error());
+}
+mysql_select_db($db,$con);
+
+
+$sql=mysql_query("Select * from mera_dusra_db");
+
+if(!$sql)
+{
+$create=mysql_query("Create Table blog(title varchar(25),body varchar(255)") or die(mysql_error());
+
+echo "Table created";
+
+$insert=mysql_query("Insert INTO blog (title,body,time) values('".$title."','".$body."','".date("d/m/y : H:i:s",time())."')");
+
+}
+else
+{
+$insert=mysql_query("Insert INTO blog (title,body,time) values('".$title."','".$body."','".date("d/m/y : H:i:s",time())."')");
+header("location:display.php");
+
+}
+
+/*
+if(table_exists("blog"))
+{
+$insert=mysql_query("Insert INTO blog (Title,Body) values('$title','$body')");
+
+}
+else
+{
+
+$create=mysql_query("Create Table blog(Title varchar(20),Body varchar(50)") or die(mysql_error());
+
+echo "Table created";
+
+$insert=mysql_query("Insert INTO blog (Title,Body) values('$title','$body')");
+
+echo "Row inserted";
+}
+*/
+?>
+

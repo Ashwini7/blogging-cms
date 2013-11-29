@@ -1,0 +1,38 @@
+<?php
+/**
+// Inialize session
+	session_start();
+   $_SESSION['username'] = $_POST['username'];
+
+// Check, if user is already login, then jump to secured page
+/*if (isset($_SESSION['username'])) {
+        header('Location: securedpage.php');*/
+
+
+
+
+?>
+<html>
+
+<head>
+	  <title>OpenSource Bloggers World !</title>
+</head>
+
+	<body style="background-color:#6B6D82;">
+
+		<h3>User Login</h3>
+
+<table border="0">
+	<form method="POST" action="insert.php">
+	<tr><td>Username</td><td>:</td><td><input type="text" name="username" size="20"></td></tr>
+	<tr><td>Password</td><td>:</td><td><input type="password" name="password" size="20"></td></tr>
+	<tr><td>&nbsp;</td><td>&nbsp;</td><td><input type="submit" value="Login"></td></tr></br>
+
+	<a href="index.html"> Go back to Main Page</a>
+</form>
+</table>
+	<font size="6"><a href="signup.php">New Account.</a></font> 
+
+</body>
+
+</html>

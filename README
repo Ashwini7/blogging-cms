@@ -1,0 +1,17 @@
+This cmsd is written in php and opensource.
+This cms is only used for Textual  blogging,
+Installation instruction given in documentation file (goblogger.div).Which is created using Latex.
+All code is written in HTML,CSS and php Technology.
+Its not a big Cms but it will give you overview or idea of creating your own blogging CMSD.
+Images reference is given in IMAGE Reference file.
+Track Report of creating go blogger is given in Track report file.
+
+
+
+for developing references taken from:-
+
+1. www.w3schools.com
+2. friends.
+
+/* Note that development of this cms is in process . I will update repo 
+as i wrok on it. */ 

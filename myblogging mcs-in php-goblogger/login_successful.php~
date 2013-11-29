@@ -1,0 +1,8 @@
+<?php 
+session_start();
+$_SESSION['uname']=$myusername;
+$_SESSION['pwd']=$mypassword;
+//if(!session_is_registered(myusername)){
+header("location:vish12.php");
+//}
+?>

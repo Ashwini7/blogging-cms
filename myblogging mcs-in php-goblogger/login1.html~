@@ -1,0 +1,14 @@
+<html>
+<body align="center" style="background-color:#6B6D82;">
+<form action="insert.php" method="post">
+Firstname:&nbsp;<input type="text" name="firstname" maxlength="20" /></br>
+Lastname:&nbsp;<input type="text" name="Lastname" maxlength="20"/></br>
+Age: <input type="text" name="age"maxlength="3"></br>
+Username: <input type="text" name="username" maxlength="20"></br>
+Password: <input type="password" name="password"  maxlength="20"/></br>
+<input type="submit" value="submit" />
+</form>
+
+</body>
+</html> 
+

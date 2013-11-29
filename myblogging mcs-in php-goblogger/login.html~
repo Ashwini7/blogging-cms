@@ -1,0 +1,11 @@
+<html>
+<body>
+
+<form action="insert.php" method="post">
+Username:&nbsp;<input type="text" name="firstname" /></br>
+Password:&nbsp;<input type="password" value="pwd" /></br>
+<input type="submit" />
+</form>
+
+</body>
+</html> 
